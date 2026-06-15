@@ -1,55 +1,18 @@
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   background-color: #0d1b2a;
   color: #c8d8e8;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-/* ── NAV ── */
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 40px;
-  height: 56px;
-  border-bottom: 1px solid rgba(0,200,220,.25);
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 700;
-  font-size: 1.15rem;
-  color: #4dd9e0;
-  text-decoration: none;
-}
-
-.logo svg { color: #4dd9e0; }
-
-.nav-links {
-  display: flex;
-  gap: 32px;
-  list-style: none;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #c8d8e8;
-  font-size: .9rem;
-  transition: color .2s;
-}
-
-.nav-links a:hover { color: #4dd9e0; }
-
-.nav-links a.active {
-  color: #f5a623;
-  border-bottom: 2px solid #f5a623;
-  padding-bottom: 2px;
 }
 
 /* ── MAIN ── */
@@ -71,7 +34,7 @@ h1 {
 .subtitle {
   text-align: center;
   color: #a8b8c8;
-  font-size: .95rem;
+  font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 36px;
 }
@@ -92,19 +55,23 @@ h1 {
   border: 1px solid #243a54;
   border-radius: 6px;
   color: #c8d8e8;
-  font-size: .95rem;
+  font-size: 0.95rem;
   padding: 14px 16px;
   margin-bottom: 16px;
   outline: none;
-  transition: border-color .2s;
+  transition: border-color 0.2s;
   font-family: inherit;
 }
 
 .form-card input::placeholder,
-.form-card textarea::placeholder { color: #4a6278; }
+.form-card textarea::placeholder {
+  color: #4a6278;
+}
 
 .form-card input:focus,
-.form-card textarea:focus { border-color: #4dd9e0; }
+.form-card textarea:focus {
+  border-color: #4dd9e0;
+}
 
 .form-card textarea {
   height: 140px;
@@ -123,10 +90,12 @@ h1 {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: background .2s;
+  transition: background 0.2s;
 }
 
-.btn-send:hover { background: #00b0be; }
+.btn-send:hover {
+  background: #00b0be;
+}
 
 /* ── OTHER WAYS ── */
 .other-ways h2 {
@@ -144,7 +113,12 @@ h1 {
   text-align: center;
 }
 
-.contact-item { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
 
 .contact-icon {
   font-size: 1.8rem;
@@ -153,18 +127,19 @@ h1 {
 
 .contact-item strong {
   color: #c8d8e8;
-  font-size: .95rem;
+  font-size: 0.95rem;
 }
 
 .contact-item span {
   color: #6a8298;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 /* ── FOOTER ── */
 footer {
-  border-top: 1px solid rgba(0,200,220,.2);
+  border-top: 1px solid rgba(0, 200, 220, 0.2);
   text-align: center;
   padding: 20px;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #4a6278;
+}
