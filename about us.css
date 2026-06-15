@@ -3,7 +3,10 @@ body{
     color: white;
 }
 
-.h2{
-    display: flex;
+.div1{
+    padding: 0%;
     
+    display: flex;
+    margin: 70;
+
 }
