@@ -33,7 +33,7 @@
   box-sizing: border-box;
 }
 
-body {
+main {
   background: var(--bg-color);
   color: var(--text-primary);
   font-family: Arial, Helvetica, sans-serif;
@@ -55,7 +55,6 @@ body > h2:first-of-type {
   color: var(--text-secondary);
   margin-bottom: 40px;
 }
-
 
 .div1 {
   max-width: 1000px;
