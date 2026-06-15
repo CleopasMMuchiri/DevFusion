@@ -49,51 +49,25 @@ body {
   color: var(--text-primary);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background-color: #0f1623;
   color: #cdd5e0;
   font-size: 14px;
   line-height: 1.6;
 }
 
-a { text-decoration: none; }
-
-/* NAVBAR */
-.navbar {
-  background-color: #0f1623;
-  border-bottom: 1px solid #1e2a3a;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.nav-inner {
-  max-width: 960px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 24px;
-}
-
-.nav-logo { display: flex; align-items: center; gap: 6px; }
-.logo-bolt { font-size: 18px; color: #00d4c8; }
-.logo-text { font-size: 18px; font-weight: 700; color: #00d4c8; }
-
-.nav-links { list-style: none; display: flex; gap: 28px; }
-.nav-links a { color: #9aa8bc; font-size: 13.5px; font-weight: 500; }
-.nav-links a:hover { color: #ffffff; }
-.nav-links a.active {
-  color: #00d4c8;
-  border-bottom: 2px solid #00d4c8;
-  padding-bottom: 2px;
+a {
+  text-decoration: none;
 }
 
 /* PRODUCTS SECTION */
@@ -103,8 +77,17 @@ a { text-decoration: none; }
   padding: 56px 24px 48px;
 }
 
-.section-title { font-size: 32px; font-weight: 700; color: #00d4c8; margin-bottom: 12px; }
-.section-subtitle { color: #9aa8bc; font-size: 14px; margin-bottom: 40px; }
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #00d4c8;
+  margin-bottom: 12px;
+}
+.section-subtitle {
+  color: #9aa8bc;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
 
 .cards-grid {
   display: grid;
@@ -133,9 +116,22 @@ a { text-decoration: none; }
   margin-bottom: 16px;
 }
 
-.card-name { font-size: 17px; font-weight: 700; color: #00d4c8; margin-bottom: 10px; }
-.card-desc { color: #9aa8bc; font-size: 13.5px; margin-bottom: 14px; }
-.card-meta { font-size: 13px; color: #cdd5e0; margin-bottom: 4px; }
+.card-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: #00d4c8;
+  margin-bottom: 10px;
+}
+.card-desc {
+  color: #9aa8bc;
+  font-size: 13.5px;
+  margin-bottom: 14px;
+}
+.card-meta {
+  font-size: 13px;
+  color: #cdd5e0;
+  margin-bottom: 4px;
+}
 
 .card-capabilities {
   list-style: disc;
@@ -145,7 +141,11 @@ a { text-decoration: none; }
   flex: 1;
 }
 
-.card-capabilities li { color: #9aa8bc; font-size: 13px; margin-bottom: 6px; }
+.card-capabilities li {
+  color: #9aa8bc;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
 
 .btn-learn {
   display: block;
@@ -159,7 +159,9 @@ a { text-decoration: none; }
   margin-top: auto;
 }
 
-.btn-learn:hover { background-color: #00bdb2; }
+.btn-learn:hover {
+  background-color: #00bdb2;
+}
 
 /* PRICING SECTION */
 
@@ -169,7 +171,12 @@ a { text-decoration: none; }
   padding: 16px 24px 64px;
 }
 
-.pricing-title { font-size: 26px; font-weight: 700; color: #ffffff; margin-bottom: 32px; }
+.pricing-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
 
 .pricing-grid {
   display: grid;
@@ -186,23 +193,64 @@ a { text-decoration: none; }
   flex-direction: column;
 }
 
-.pricing-card--featured { border: 2px solid #e8a020; }
+.pricing-card--featured {
+  border: 2px solid #e8a020;
+}
 
-.plan-name { font-size: 16px; font-weight: 600; color: #00d4c8; margin-bottom: 14px; }
-.plan-name--featured { color: #e8a020; }
-.plan-name--enterprise { color: #9b8fd4; }
+.plan-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #00d4c8;
+  margin-bottom: 14px;
+}
+.plan-name--featured {
+  color: #e8a020;
+}
+.plan-name--enterprise {
+  color: #9b8fd4;
+}
 
-.plan-price { display: flex; align-items: baseline; gap: 2px; margin-bottom: 8px; }
+.plan-price {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  margin-bottom: 8px;
+}
 
-.price-amount { font-size: 36px; font-weight: 700; color: #e8a020; }
-.price-amount--featured { color: #e8a020; }
-.price-amount--enterprise { font-size: 32px; color: #00d4c8; }
+.price-amount {
+  font-size: 36px;
+  font-weight: 700;
+  color: #e8a020;
+}
+.price-amount--featured {
+  color: #e8a020;
+}
+.price-amount--enterprise {
+  font-size: 32px;
+  color: #00d4c8;
+}
 
-.price-period { font-size: 13px; color: #9aa8bc; margin-left: 2px; }
-.plan-tagline { font-size: 12.5px; color: #9aa8bc; margin-bottom: 18px; }
+.price-period {
+  font-size: 13px;
+  color: #9aa8bc;
+  margin-left: 2px;
+}
+.plan-tagline {
+  font-size: 12.5px;
+  color: #9aa8bc;
+  margin-bottom: 18px;
+}
 
-.plan-features { list-style: none; margin-bottom: 28px; flex: 1; }
-.plan-features li { color: #cdd5e0; font-size: 13.5px; margin-bottom: 8px; }
+.plan-features {
+  list-style: none;
+  margin-bottom: 28px;
+  flex: 1;
+}
+.plan-features li {
+  color: #cdd5e0;
+  font-size: 13.5px;
+  margin-bottom: 8px;
+}
 
 .btn-start {
   display: block;
@@ -216,7 +264,9 @@ a { text-decoration: none; }
   margin-top: auto;
 }
 
-.btn-start:hover { background-color: #00bdb2; }
+.btn-start:hover {
+  background-color: #00bdb2;
+}
 
 /* FOOTER */
 .footer {
