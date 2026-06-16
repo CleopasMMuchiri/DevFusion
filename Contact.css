@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #0d1b2a;
+  color: #c8d8e8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── MAIN ── */
+main {
+  flex: 1;
+  padding: 60px 40px 80px;
+  max-width: 760px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #4dd9e0;
+  margin-bottom: 28px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #a8b8c8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 36px;
+}
+
+/* ── FORM CARD ── */
+.form-card {
+  background: #162233;
+  border: 1px solid #1e3048;
+  border-radius: 12px;
+  padding: 36px 40px 40px;
+  margin-bottom: 56px;
+}
+
+.form-card input,
+.form-card textarea {
+  width: 100%;
+  background: #1e3048;
+  border: 1px solid #243a54;
+  border-radius: 6px;
+  color: #c8d8e8;
+  font-size: 0.95rem;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+
+.form-card input::placeholder,
+.form-card textarea::placeholder {
+  color: #4a6278;
+}
+
+.form-card input:focus,
+.form-card textarea:focus {
+  border-color: #4dd9e0;
+}
+
+.form-card textarea {
+  height: 140px;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+.btn-send {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: #00c8d8;
+  color: #0d1b2a;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-send:hover {
+  background: #00b0be;
+}
+
+/* ── OTHER WAYS ── */
+.other-ways h2 {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #c8d8e8;
+  margin-bottom: 36px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 16px;
+  text-align: center;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-icon {
+  font-size: 1.8rem;
+  margin-bottom: 4px;
+}
+
+.contact-item strong {
+  color: #c8d8e8;
+  font-size: 0.95rem;
+}
+
+.contact-item span {
+  color: #6a8298;
+  font-size: 0.9rem;
+}
+
+/* ── FOOTER ── */
+footer {
+  border-top: 1px solid rgba(0, 200, 220, 0.2);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.8rem;
+  color: #4a6278;
+}

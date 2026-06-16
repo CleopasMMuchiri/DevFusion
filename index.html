@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Fusion</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle" />
+
+    <header>
+      <a href="/index.html">
+        <div class="logo">⚡Dev Fusion</div>
+      </a>
+
+      <!-- HAMBURGER MENU -->
+      <label for="sidebar-toggle" class="hamburger">
+        <span></span><span></span><span></span>
+      </label>
+
+      <!-- DESKTOP NAV -->
+      <nav class="navbar">
+        <a href="/about us.html" class="nav-link">About</a>
+        <a href="/services.html" class="nav-link">Services</a>
+        <a href="/products.html" class="nav-link">Products</a>
+        <a href="/testimonial.html" class="nav-link">Testimonials</a>
+        <a href="/faq.html" class="nav-link">FAQ</a>
+        <a href="/contact.html" class="nav-link">Contact</a>
+      </nav>
+    </header>
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+      <label for="sidebar-toggle" class="sidebar-close">✕</label>
+
+      <nav class="sidebar-nav">
+        <a href="/about us.html" class="sidebar-link">About</a>
+        <a href="/services.html" class="sidebar-link">Services</a>
+        <a href="/products.html" class="sidebar-link">Products</a>
+        <a href="/testimonial.html" class="sidebar-link">Testimonials</a>
+        <a href="/faq.html" class="sidebar-link">FAQ</a>
+        <a href="/contact.html" class="sidebar-link">Contact</a>
+      </nav>
+    </aside>
+
+    <!-- Home Page -->
+    <div class="active main" id="home">
+      <section class="hero">
+        <h1>The Future of Workflow Management</h1>
+        <p>
+          Automate, integrate, and scale your business with a platform built for
+          modern teams. Say goodbye to manual processes.
+        </p>
+        <div class="hero-visual">🚀</div>
+        <button onclick="switchPage('services')">Get Started Free</button>
+      </section>
+
+      <section>
+        <h2 style="text-align: center; margin-top: 4rem">
+          Why Teams Choose Nexus
+        </h2>
+        <div class="grid">
+          <div class="card">
+            <div class="card-icon">⚡</div>
+            <h3>Lightning Fast</h3>
+            <p>
+              Process thousands of operations per second. Built on serverless
+              infrastructure for unmatched performance and reliability.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🔐</div>
+            <h3>Enterprise Security</h3>
+            <p>
+              Bank-level encryption, SOC 2 compliance, and continuous security
+              monitoring. Your data is protected 24/7.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🔗</div>
+            <h3>500+ Integrations</h3>
+            <p>
+              Connect with all your favorite tools. API-first design means you
+              can build custom integrations in minutes.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🎯</div>
+            <h3>Real-Time Analytics</h3>
+            <p>
+              Beautiful dashboards with actionable insights. Track what matters
+              and make data-driven decisions instantly.
+            </p>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-number">10K+</div>
+            <div class="stat-label">Active Users</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">99.99%</div>
+            <div class="stat-label">Uptime SLA</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Integrations</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Support</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

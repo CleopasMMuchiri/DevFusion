@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevFusion – Contact</title>
+    <link rel="stylesheet" href="Contact.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle" />
+
+    <header>
+      <a href="/index.html">
+        <div class="logo">⚡Dev Fusion</div>
+      </a>
+
+      <!--  hamburger -->
+      <label for="sidebar-toggle" class="hamburger">
+        <span></span><span></span><span></span>
+      </label>
+
+      <!-- desktop nav -->
+      <nav class="navbar">
+        <a href="/about us.html" class="nav-link">About</a>
+        <a href="/services.html" class="nav-link">Services</a>
+        <a href="/products.html" class="nav-link">Products</a>
+        <a href="/testimonial.html" class="nav-link">Testimonials</a>
+        <a href="/faq.html" class="nav-link">FAQ</a>
+        <a href="/contact.html" class="nav-link active">Contact</a>
+      </nav>
+    </header>
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+      <label for="sidebar-toggle" class="sidebar-close">✕</label>
+
+      <nav class="sidebar-nav">
+        <a href="/about us.html" class="sidebar-link">About</a>
+        <a href="/services.html" class="sidebar-link">Services</a>
+        <a href="/products.html" class="sidebar-link">Products</a>
+        <a href="/testimonial.html" class="sidebar-link">Testimonials</a>
+        <a href="/faq.html" class="sidebar-link">FAQ</a>
+        <a href="/contact.html" class="sidebar-link active">Contact</a>
+      </nav>
+    </aside>
+    <!-- MAIN -->
+    <main>
+      <h1>Let's Talk</h1>
+
+      <p class="subtitle">
+        Have questions? Want a demo? Let us know how we can help. We typically
+        respond within<br />
+        2 hours during business hours.
+      </p>
+
+      <!-- FORM -->
+      <div class="form-card">
+        <input type="text" placeholder="Your full name" />
+        <input type="email" placeholder="your@company.com" />
+        <input type="text" placeholder="Company name" />
+        <textarea
+          placeholder="Tell us about your project or challenge..."
+        ></textarea>
+        <button class="btn-send">Send Message</button>
+      </div>
+
+      <!-- OTHER WAYS -->
+      <div class="other-ways">
+        <h2>Other ways to reach us</h2>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <strong>Email</strong>
+            <span>hello@devfusion.com</span>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" style="color: #e05a7a">📞</div>
+            <strong>Phone</strong>
+            <span>+254 (712) 345 678</span>
+          </div>
+          <div
+            class="contact-item"
+            style="grid-column: 1 / -1; max-width: 200px; margin: 0 auto"
+          >
+            <div class="contact-icon">📍</div>
+            <strong>Office</strong>
+            <span>Karen</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>© 2026 DevFusion. Transforming workflows everywhere.</footer>
+  </body>
+</html>
